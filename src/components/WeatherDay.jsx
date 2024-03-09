@@ -2,7 +2,7 @@ import React from 'react'
 
 const WeatherDay = () => {
   return (
-    <div className='flex flex-col items-center text-white gap-4 border-2 border-[#353535] w-28 rounded-lg py-4 '>
+    <div className='flex flex-col items-center m-auto text-white gap-4 border-2 border-[#353535] w-24 rounded-lg py-4 '>
         <p className='text-sm font-bold'>Hoy</p>
 
         <p className='text-sm'>4 Mar</p>

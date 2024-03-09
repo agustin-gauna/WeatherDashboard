@@ -10,6 +10,8 @@ import HumidityInfo from './components/HumidityInfo';
 import VisibilityInfo from './components/VisibilityInfo';
 import Footer from './components/Footer';
 import WeatherForHour from './components/WeatherForHour';
+import SlyderForDay from './components/SlyderForDay'
+import SlyderForHour from './components/SlyderForHour'
 
 function App() {
   return (
@@ -39,15 +41,25 @@ function App() {
         <VisibilityInfo/>
       </section>
 
-      <section className='mb-4 w-[90%] m-auto'>
+      {/* <section className='mb-4 w-[90%] m-auto'>
         <WeatherForHour/>
+      </section> */}
+
+
+      <section className='mb-4 w-[90%] m-auto'> {/* seccion de clima por hora */}
+        <SlyderForHour/>
       </section>
-
-
+      
 
       <section className='mb-4 w-[90%] m-auto'>
-        <WeatherForDay/>
+
+      <SlyderForDay/>
+
       </section>
+
+      {/* <section className='mb-4 w-[90%] m-auto'>
+        <WeatherForDay/>
+      </section> */}
 
       <footer className='mb-4 w-[90%] m-auto'>
         <Footer/>
